@@ -15,9 +15,9 @@ if exist "printer.c" (
 	echo "Missing printer.c file"
 	goto :bad
 )
-timeout 1
+timeout 1 > nul
 echo "Done"
-timeout 1
+timeout 1 > nul
 
 
 if exist "hello_world.c" (
@@ -31,16 +31,16 @@ if exist "hello_world.c" (
 	echo "Missing hello_world.c file"
 	goto :bad
 )
-timeout 1
+timeout 1 > nul
 echo "Done"
-timeout 1
+timeout 1 > nul
 
 
 echo "Linking final executable hello_world.exe..."
 echo.>"hello_world.exe"
-timeout 1
+timeout 1 > nul
 echo "Done"
-timeout 1
+timeout 1 > nul
 
 :good
 exit 0
